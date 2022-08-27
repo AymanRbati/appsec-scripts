@@ -1,1 +1,1 @@
-Scripts that i used to exploit web vulnerabilities during pentests/ctfs
+Scripts that i used to exploit some web/mobile app vulnerabilities during pentests/ctfs
