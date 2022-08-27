@@ -5,7 +5,7 @@ import urllib
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-//this sends your traffic through Burp (useful for debugging)
+#this sends your traffic through Burp (useful for debugging)
 proxies = {'http': 'http://127.0.0.1:8080'}
 
 def sqli_password(url):
