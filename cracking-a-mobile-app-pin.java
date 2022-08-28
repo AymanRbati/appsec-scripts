@@ -12,8 +12,8 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class Main {
     public static void main(String[] args) {
-        for (int i = 1000; i < 10000; i++) {
-            String pin = Integer.toString(i);
+        for (int i = 0; i < 10000; i++) {
+            String pin = String.format("%04d",i);
             String decrypted = Crypto.decryptcipher("ED1nf3uLW4Hkwr1aGw+NpN5sgcRMPCFuk0XgtW181m4o6d0Ml3D/j6h1NSyOh4dbcGsbK6rcZOUyzHxWVb4QkA", pin);
             if (!decrypted.isEmpty() && decrypted.length() == 36) {
                 System.out.println("The flag is : " + decrypted);
