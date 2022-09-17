@@ -5,7 +5,7 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 // Context : 
-// in the CTF, i had an apk file, decompiled it, and found that i need to decrypt an AES cipher to get the flag.
+// in a mibile appsec CTF, i had an apk file, decompiled it, and found that i need to decrypt an AES cipher to get the flag.
 // while i managed to find the encryption key, the decryption method below needs the right 4 digits pin. 
 // In order to get the flag, i wrote the following code to bruteforce the pin.
 
