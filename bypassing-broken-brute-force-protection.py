@@ -2,7 +2,12 @@ import requests
 import sys
 import time
 
-url="https://0af9008203834e85c0f6bc59002c004b.web-security-academy.net/login"
+# this is a solution i made for the portswigger lab https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block
+# basically, doing a succesful authentication resets blacklist counter.
+# so we can do two failed attempts and a successfull one (with the credentials that they gave us wiener:peter)
+# based on this, we can perform a bruteforce attack
+
+url="https://vulnerableapp.com/login"
 username = "wiener"
 proxies = {'http': 'http://127.0.0.1:8080'}
 
